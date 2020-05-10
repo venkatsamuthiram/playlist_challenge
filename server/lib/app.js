@@ -19,8 +19,8 @@ module.exports = function createApp(options) {
     app.use(cors());
 
     //************ Added GraphQL library *************/
-    const graphqlController = require('./controller/graphqlController');
-    app.use('/graphql', graphqlController);
+    // const graphqlController = require('./controller/graphqlController');
+    // app.use('/graphql', graphqlController);
 
     app.get('/library', function(req, res) {
         var data = library.getLibrary();
